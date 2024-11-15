@@ -1,0 +1,62 @@
+:root {
+    --primary-base-1: #0A0909;
+    --primary-base-2: #030303;
+    --primary-base-3: #151414;
+    --primary-base-4: #1F1E1E;
+    --primary-base-5: #282828;
+    --primary-base-6: #424242;
+    --primary-base-7: #525252;
+    --primary-base-8: #858585;
+    --primary-base-9: #DEDEDE;
+    --primary-base-10: #F9F9F9;
+  
+    /* alert colors */
+    --alert-success: #29AE29;
+    --alert-warning: #FFC62A;
+    --alert-error: #EF4444;
+  
+  
+    /* other colors */
+    --other-1: #ED7615;
+    --other-2: #6E3CF5;
+    --other-3: #38E1F1;
+    --other-4: #0082FF;
+
+    /* fonts */
+    --font-Labil: 'LabilFont', sans-serif; /* Fallback font added */
+}
+  
+@media (prefers-color-scheme: white) {
+    :root {
+      --primary-base-1: #F9F9F9;
+    }
+}
+  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+html {
+    font-size: 14px;
+    font-family: var(--font-Labil);
+}
+  
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+  
+a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+}
+  

@@ -1,0 +1,10 @@
+{
+  "extends": ["next", "next/core-web-vitals"],
+  "plugins": ["jsx-a11y"],
+  "rules": {
+    "jsx-a11y/alt-text": "warn",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jsx-a11y/heading-has-content": "warn",
+    "jsx-a11y/label-has-associated-control": "warn"
+  }
+}
