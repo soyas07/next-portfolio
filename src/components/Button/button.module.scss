@@ -1,0 +1,47 @@
+.btn {
+    padding: 0.9rem 1rem;
+    min-width: 139px;
+    min-height: 40px;
+    outline: none;
+    /* Black/black-400 */
+    border-radius: 144px;
+    border: none;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: -0.01em;
+    cursor: pointer;
+    /* White/white-500 */
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.primary {
+    color: var(--primary-base-3);
+    margin-left: auto;
+    margin-top: 1rem;
+    background-color: var(--primary-base-4);
+    transition: color 0.3s ease;
+    &:hover {
+        
+    }
+
+}
+
+
+@media only screen and (min-width: 550px) {
+    .primary {
+        margin: 0;
+        height: 70px;
+        padding: 1.4rem 1.8rem;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .primary {
+        height: 100px;
+    }
+}

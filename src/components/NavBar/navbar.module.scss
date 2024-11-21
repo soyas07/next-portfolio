@@ -1,0 +1,63 @@
+#logo {
+    width: 61px;
+    height: 21px; 
+}
+
+#navMenu {
+    cursor: pointer;
+}
+
+.navMenuLists {
+    margin-top: 2.5rem;
+    list-style: none;
+    // max-width: 470px;
+    min-height: 56px;
+    background-color: var(--primary-base-2);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 80px;
+    padding: .4rem;
+}
+
+.navMenuLists li {
+    color: #C4C4C4;
+    padding: .5rem 1.3rem;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    /* identical to box height, or 28px */
+    letter-spacing: -0.01em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.navMenuLists li:hover {
+    background-color: #ffffff; /* Highlight background color on hover */
+    color: #000000; /* Change text color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.navMenuLists li span {
+    border-radius: 100%;
+    background-color: #C4C4C4;
+    color: black;
+    padding: 0.3rem 0.4rem;
+    font-size: 1rem;
+    margin-right: .3rem;
+}
+
+.navMenuLists li span:hover {
+    background-color: #000000; /* Highlight circle background on hover */
+    color: #ffffff; /* Change circle text color on hover */
+}
+
+.navMenuLists li.active {
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}

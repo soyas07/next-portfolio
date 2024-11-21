@@ -1,0 +1,23 @@
+.fontH1 {
+    font-size: 4rem;
+}
+
+@media only screen and (min-width: 550px) {
+    .fontH1 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .fontH1 {
+        font-size: 8rem;
+        margin-bottom: -70px;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .fontH1 {
+        font-size: 16rem;
+        margin-bottom: -150px;
+    }
+}
