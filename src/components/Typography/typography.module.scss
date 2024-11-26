@@ -2,9 +2,29 @@
     font-size: 4rem;
 }
 
+.fontH2 {
+    font-size: 3rem;
+}
+
+.fontH3 {
+    font-size: 1.9rem;
+}
+
+.fontH4 {
+    font-size: 1.5rem;
+}
+
+.fontP {
+    font-size: 1.2rem;
+}
+
 @media only screen and (min-width: 550px) {
     .fontH1 {
         font-size: 5rem;
+    }
+
+    .fontH2 {
+        font-size: 3.5rem;
     }
 }
 
@@ -13,9 +33,25 @@
         font-size: 8rem;
         margin-bottom: -70px;
     }
+
+    .fontH2 {
+        font-size: 6rem;
+    }
 }
 
 @media only screen and (min-width: 1250px) {
+    .fontH1 {
+        font-size: 12rem;
+        margin-bottom: -111px;
+    }
+
+    .fontH2 {
+        font-size: 8rem;
+    }
+}
+
+/* after 1350px screen size */
+@media only screen and (min-width: 1550px) {
     .fontH1 {
         font-size: 16rem;
         margin-bottom: -150px;

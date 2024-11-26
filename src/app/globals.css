@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary-base-1: #0A0909;
-    --primary-base-2: #030303;
-
     /* alert colors */
     --alert-success: #29AE29;
     --alert-warning: #FFC62A;
@@ -24,6 +21,7 @@
     --primary-base-2: #2d2d2d;
     --primary-base-3: #FFFFFF;
     --primary-base-4: #2d2d2d;
+    --primary-base-5: #2d2d2d;
     /* Update other colors as necessary for dark mode */
 }
 
@@ -32,6 +30,7 @@
     --primary-base-2: #000000;
     --primary-base-3: #000000;
     --primary-base-4: #F9F9F9;
+    --primary-base-5: #000000;
     /* Update other colors as necessary for light mode */
 }
 
@@ -71,7 +70,7 @@ body {
 }
 
 nav {
-    padding: 1rem 1.2rem;
+    padding: 1rem 0rem;
     max-width: 680px;
     margin: 0 auto;
     min-height: 72px;
@@ -86,6 +85,7 @@ a {
     max-width: 1700px;
     margin: 0 auto;
     padding: 0 1.2rem;
+    position: relative;
 }
 
 .hero-section-1 {
@@ -96,10 +96,83 @@ a {
     text-align: left; /* Center text inside the section */
 }
 
+.hero-section-2 {
+    margin-bottom: 5rem;
+}
+
+.intro-section {
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.intro-subsection-1 {
+    align-self: flex-start;
+}
+
+.project-section {
+    margin-bottom: 7rem;
+}
+
+.project-subsection-1 {
+    margin-bottom: 1.5rem;
+}
+
+.project-subsection-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 25px;
+}
+
+.article-section {
+    margin-bottom: 5rem;
+}
+
+.banner-section {
+    margin-bottom: 14rem;
+}
+
 .flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.testimonials-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.testimonials-section-2 {
+    margin-top: 1rem;
+}
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 100px;
+}
+
+.social-footer {
+    display: flex;
+    justify-content: space-between;
+    min-width: 210px;
+}
+
+#custom-btn {
+    background-color: var(--primary-base-2);
+    color: white;
 }
 
 @media only screen and (min-width: 550px) {
@@ -108,6 +181,7 @@ a {
     }
 
     .hero-section-1 {
+        margin-top: 5rem;
         max-width: 100%;
     }
 
@@ -118,12 +192,41 @@ a {
     .hero-section-2 {
         margin-top: -5rem;
     }
+
+    .intro-section {
+        gap: 10rem;
+    }
+
+    .project-subsection-2 {
+        max-width: 70%;
+        position: absolute;
+    }
+
+    .project-subsection-1-item {
+        position: absolute;
+        margin-top: 335px;
+        right: 0;
+        margin-right: 2rem;
+    }
+
+    .project-subsection-3 {
+        margin-top: 200px;
+    }
+
+    .banner-section {
+        margin-bottom: 17rem;
+    }
+    
 }
 
 /* after 700px screen size */
 @media only screen and (min-width: 700px) {
     html {
         font-size: 18px;
+    }
+
+    .project-subsection-1-item {
+        margin-top: 275px;
     }
 }
 
@@ -133,11 +236,72 @@ a {
     html {
         font-size: 20px;
     }
+
+    .article-section {
+        max-width: 96%;
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+        flex-wrap: wrap;
+        column-gap: 50px;
+    }
+
+    .testimonials-section {
+        flex-direction: row;
+        column-gap: 205px;
+    }
+    
+    .testimonials-section-2 {
+        align-self: flex-end;
+        width: 100%;
+        flex: 1 0 19%;
+    }
 }
 
 /* after 1250px screen size */
 @media only screen and (min-width: 1250px) {
     .hero-section-2 {
         margin-top: -10rem;
+    }
+
+    .intro-section {
+        gap: 35rem;
+        margin-bottom: 8rem;
+    }
+
+    .project-subsection-2 {
+        max-width: 40%;
+    }
+
+    .project-subsection-1-item {
+        margin-top: 335px;
+    }
+
+    .article-section {
+        column-gap: 7rem;
+    }
+
+    .banner-section {
+        margin-bottom: 20rem;
+    }
+
+    .testimonials-section {
+        column-gap: 471px;
+    }
+}
+
+/* after 1550px screen size */
+@media only screen and (min-width: 1550px) {
+    .hero-section-2 {
+        margin-top: -10rem;
+    }
+
+    .intro-section {
+        gap: 45rem;
+        margin-bottom: 8rem;
+    }
+
+    .project-subsection-2 {
+        max-width: 30%;
     }
 }
